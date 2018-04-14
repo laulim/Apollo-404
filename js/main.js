@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 //Скрипт для показа и скрытия мобильного меню
-//Создает переменные для кнопки и для меню
+	//Создает переменные для кнопки и для меню
 	var pull = $("#navigation-toggle");
 	var nav = $(".navigation ul");
 
@@ -25,4 +25,14 @@ $(document).ready(function() {
 			nav.removeAttr('style');
 		}
 	});
+
+//Вызов слайдера Owl-carousel
+	$('#top-slider').owlCarousel({
+		singleItem: true,
+		navigation: true,
+		theme: "top-slider-theme",
+		navigationText: ["", ""],
+		slideSpeed: 600
+	});
+
 });
