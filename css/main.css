@@ -1,0 +1,242 @@
+/*
+ * Box-Sizing Model
+ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive Images
+ */
+img {
+  min-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor Change On Hover On Buttons
+ */
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+html {
+  font-size: 10px;
+  line-height: 1.4;
+}
+body {
+  font-family: 'Noto Sans';
+}
+.block {
+  background-color: #BCDB3E;
+  padding: 20px;
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.slider {
+  background: #2F426C;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.line {
+  border-top: 1px solid #A1B0D3;
+}
+.footer {
+  background: #352222;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* ==========================================================================
+   Mobile First Method 
+   ========================================================================== */
+/* Custom, iPhone Retina - adaptive styles after 320px */
+/* Small Devices, Tablets - adaptive styles after 768px */
+/* Large Devices, Wide Screens - adaptive styles after 1200px */
+/*======================
+ LOGO 
+ =======================*/
+/* ==========================================================================
+   LOGO
+   ========================================================================== */
+.logo {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.logo__name {
+  font-size: 33px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 5.5px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .logo__name {
+    font-size: 38px;
+    letter-spacing: 7px;
+  }
+}
+.logo__slogan {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  color: #a1bbd9;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .logo__slogan {
+    font-size: 16px;
+    letter-spacing: 9px;
+  }
+}
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+.navigation {
+  background-color: #38383a;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  background-color: #35577d;
+}
+@media (min-width: 992px) {
+  .navigation {
+    background-color: #38383a;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+@media (min-width: 992px) {
+  .navigation ul {
+    display: flex;
+  }
+}
+.navigation li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #466a92;
+}
+@media (min-width: 992px) {
+  .navigation li {
+    border-bottom: none;
+  }
+}
+.navigation a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 22px 15px;
+}
+.navigation a:hover {
+  color: #ffcc00;
+}
+@media (min-width: 992px) {
+  .navigation a {
+    display: inline-block;
+    padding: 0;
+  }
+}
+.navigation__toggle-button {
+  display: block;
+  background: url('..//img/icons/navigation-icon.png');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  padding: 23px 15px;
+  background-color: #38383a;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .navigation__toggle-button {
+    display: none;
+  }
+}
+.navigation__toggle-button--active {
+  background-color: #16385f;
+}
+.container--mobile--no-padding {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .container--mobile--no-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container--mobile--no-padding {
+    width: 1170px;
+  }
+}
