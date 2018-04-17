@@ -32,7 +32,8 @@ $(document).ready(function() {
 		navigation: true,
 		theme: "top-slider-theme",
 		navigationText: ["", ""],
-		slideSpeed: 600
+		slideSpeed: 600,
+		rewindNav: false,
 	});
 
 });
