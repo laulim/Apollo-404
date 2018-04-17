@@ -80,6 +80,22 @@ html {
 body {
   font-family: 'Noto Sans';
 }
+.heading-h2 {
+  color: #333333;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section {
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+  }
+}
 .block {
   background-color: #BCDB3E;
   padding: 20px;
@@ -365,41 +381,60 @@ body {
 /* ==========================================================================
    HOW WE WORK
    ========================================================================== */
-.how-we-work__head {
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+.how-we-work {
+  padding-top: 40px;
+  padding-bottom: 55px;
 }
-@media (min-width: 768px) {
-  .how-we-work__head {
-    font-size: 38px;
+@media (min-width: 1200px) {
+  .how-we-work {
+    padding-top: 55px;
+    padding-bottom: 73px;
   }
 }
-.how-we-work {
+.how-we-work-block {
   text-align: center;
-  margin-bottom: 75px;
+  padding-bottom: 40px;
+}
+.how-we-work-block:last-child {
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .how-we-work-block:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .how-we-work-block {
+    padding-bottom: 0;
+  }
 }
 .how-we-work__img {
   height: 115px;
   margin-bottom: 24px;
+  display: table;
+  width: 100%;
 }
-.how-we-work__img img {
-  width: auto;
-  height: 100px;
+.how-we-work__img div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 .how-we-work__title {
+  color: #333333;
   font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 18px;
 }
 @media (min-width: 768px) {
   .how-we-work__title {
     font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 22px;
   }
 }
 .how-we-work__desc {
   font-size: 14px;
   color: #777777;
+  line-height: 24px;
 }
