@@ -86,7 +86,13 @@ body {
   font-weight: bold;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .heading-h2 {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
 }
 .section {
   padding-top: 40px;
@@ -382,12 +388,10 @@ body {
    HOW WE WORK
    ========================================================================== */
 .how-we-work {
-  padding-top: 40px;
   padding-bottom: 55px;
 }
 @media (min-width: 1200px) {
   .how-we-work {
-    padding-top: 55px;
     padding-bottom: 73px;
   }
 }
