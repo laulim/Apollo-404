@@ -14,6 +14,7 @@
  */
 img {
   height: auto;
+  max-width: 100%;
 }
 /*
  * Cursor Change On Hover On Buttons
@@ -80,28 +81,6 @@ html {
 body {
   font-family: 'Noto Sans';
 }
-.heading-h2 {
-  color: #333333;
-  font-size: 28px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-@media (min-width: 1200px) {
-  .heading-h2 {
-    font-size: 38px;
-    margin-bottom: 40px;
-  }
-}
-.section {
-  padding-top: 40px;
-}
-@media (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-  }
-}
 .block {
   background-color: #BCDB3E;
   padding: 20px;
@@ -126,9 +105,75 @@ body {
 /* Custom, iPhone Retina - adaptive styles after 320px */
 /* Small Devices, Tablets - adaptive styles after 768px */
 /* Large Devices, Wide Screens - adaptive styles after 1200px */
-/*======================
- LOGO 
- =======================*/
+.heading {
+  color: #333333;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+}
+.heading--smaller-margin {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.heading--number:before {
+  height: 26px;
+  width: 26px;
+  display: block;
+  border-radius: 13px;
+  background-color: #ffc80a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  content: "0";
+  padding-top: 5px;
+  padding-left: 8px;
+  position: absolute;
+  left: -13px;
+  top: -40px;
+}
+@media (min-width: 1200px) {
+  .heading--number:before {
+    left: -32px;
+    top: -30px;
+  }
+}
+.heading--number-1:before {
+  content: "1";
+}
+.heading--number-2:before {
+  content: "2";
+}
+.section {
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 992px) {
+  .section--p-b-0 {
+    padding-bottom: 0;
+  }
+}
+.section--p-t-70 {
+  padding-top: 70px;
+}
 /* ==========================================================================
    LOGO
    ========================================================================== */
@@ -387,14 +432,6 @@ body {
 /* ==========================================================================
    HOW WE WORK
    ========================================================================== */
-.how-we-work {
-  padding-bottom: 55px;
-}
-@media (min-width: 1200px) {
-  .how-we-work {
-    padding-bottom: 73px;
-  }
-}
 .how-we-work-block {
   text-align: center;
   padding-bottom: 40px;
@@ -441,4 +478,29 @@ body {
   font-size: 14px;
   color: #777777;
   line-height: 24px;
+}
+.service-desc__img--xs-m-b-40 {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .service-desc__img--xs-m-b-40 {
+    margin-bottom: 0;
+  }
+}
+.service-desc__content {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.service-desc__content p {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.service-desc__button-arrow {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icons/arrow-orange.png");
+  background-repeat: no-repeat;
+  background-position: left top;
 }
