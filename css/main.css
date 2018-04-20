@@ -106,11 +106,6 @@ p {
 .line {
   border-top: 1px solid #eaeff5;
 }
-.footer {
-  background: #352222;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 /* ==========================================================================
    Mobile First Method 
    ========================================================================== */
@@ -624,4 +619,43 @@ p {
   background-image: url("../img/icons/arrow-orange.png");
   background-repeat: no-repeat;
   background-position: left top;
+}
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+  background: #252525;
+}
+.footer p {
+  color: #6c6c6c;
+}
+.footer__title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #f7f8f9;
+  margin-bottom: 20px;
+}
+.footer__nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 57px;
+}
+.footer__nav li {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.footer__nav li a {
+  color: #6c6c6c;
+  text-decoration: none;
+  display: block;
+}
+.footer__nav li a:hover {
+  color: #ffc80a;
+  text-decoration: none;
 }
