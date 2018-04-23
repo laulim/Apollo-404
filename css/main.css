@@ -165,6 +165,9 @@ p {
   padding-top: 40px;
   padding-bottom: 55px;
 }
+.section--p-b-35 {
+  padding-bottom: 35px;
+}
 @media (min-width: 768px) {
   .section {
     padding-top: 60px;
@@ -182,9 +185,6 @@ p {
 }
 .section--p-t-70 {
   padding-top: 70px;
-}
-.section--p-b-35 {
-  padding-bottom: 35px;
 }
 /* ==========================================================================
    PACKAGE
@@ -298,6 +298,12 @@ p {
   padding-top: 30px;
   padding-bottom: 40px;
   text-align: center;
+  padding-top: 80px;
+}
+@media (min-width: 992px) {
+  .logo {
+    padding-top: 30px;
+  }
 }
 .logo__name {
   font-size: 33px;
@@ -338,14 +344,19 @@ p {
   font-weight: 700;
   background-color: #35577d;
   box-shadow: 0px 5px 10px 0px #2a496d;
-  z-index: 1;
-  position: relative;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 @media (min-width: 992px) {
   .navigation {
     background-color: #38383a;
     padding-top: 23px;
     padding-bottom: 23px;
+    position: relative;
+    z-index: 1;
   }
 }
 .navigation ul {
